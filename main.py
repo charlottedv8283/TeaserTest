@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 #Excel Tabelle einlesen und als Array speichern (ohne Überschriftenzeilen)
-table = pd.read_excel(r"C:\Users\charl\PycharmProjects\TeaserTest\Gebauededaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
+table = pd.read_excel(r"C:\Users\charl\PycharmProjects\TeaserTest\Gebaeudedaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
 rows, columns = table.shape
 
 #alle Gebaeude aus der Tabelle generieren und im Projekt speichern, nur Einfamilienhaeuser; Projekt wird zurückgegeben
