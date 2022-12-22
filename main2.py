@@ -1,11 +1,11 @@
-#Erstellung von einfachen Modelica Gebaeudemodellen mit Hilfe von TEASER; Daten aus Excel Tabelle eingelesen
+#Erstellung von Modelica Gebaeudemodellen mit Hilfe von TEASER; Daten aus Excel Tabelle eingelesen
 from teaser.project import Project
 import teaser.logic.utilities as utilities
 import os
 import pandas as pd
 
 #Excel Tabelle einlesen und als Array speichern (ohne Überschriftenzeilen)
-table = pd.read_excel(r"C:\Users\charl\PycharmProjects\TeaserTest\Gebaeudedaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
+table = pd.read_excel(r"C:\Users\charl\PycharmProjects\TeaserTest\Gebauededaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
 rows, columns = table.shape
 
 #alle Gebaeude aus der Tabelle generieren und im Projekt speichern, nur Einfamilienhaeuser; Projekt wird zurückgegeben
@@ -77,7 +77,7 @@ def export_buildings(pro):
         internal_id=None,
         path=r'C:\Users\charl\PycharmProjects\TeaserTest\Teaser_output_gebaeude')
 
-#Aufrufen der Funktion export_buildings, um Gebaeude abzuspeichern
-#export_buildings(pro)
 
-print(type(pro.buildings[1]))
+export_buildings(pro)
+
+print("Fertig!")
