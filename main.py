@@ -14,6 +14,11 @@ def generate_buildings():
     pro = Project(load_data=True)
     pro.name = "Einfamilienhaeuser"
 
+    thisdict={
+        0 : 20,
+        90 : 40
+    }
+
     for i in range(rows):
         pro.add_residential(
             method='iwu',
@@ -25,16 +30,17 @@ def generate_buildings():
             net_leased_area=table[i,5],
             attic=table[i,9],
             cellar=table[i,10]
-            #street_name=table[i,11],
-            #city=table[i,12]
         )
+        pro.buildings[i].street_name=table[i,13]
+        pro.buildings[i].city=table[i,14]
+        #pro.buildings[i].window_area=thisdict
     return pro
 
 
 pro = generate_buildings()
 
 for j in range(rows):
-    print(pro.buildings[j].name, pro.buildings[j].sum_heat_load, pro.buildings[j].height_of_floors,pro.buildings[j].building_id)
+    print(pro.buildings[j].name, pro.buildings[j].sum_heat_load,'W',pro.buildings[j].height_of_floors,pro.buildings[j].street_name,pro.buildings[j].year_of_retrofit)
 
 #Exportieren aller zuvor generierten Gebaeude
 def export_buildings(pro):
