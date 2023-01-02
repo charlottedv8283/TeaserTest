@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 #Excel Tabelle einlesen und als Array speichern (ohne Überschriftenzeilen)
-table = pd.read_excel(r"C:\Users\charl\PycharmProjects\TeaserTest\Gebaeudedaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
+table = pd.read_excel(r"Gebaeudedaten.xlsx", sheet_name='TEASER_Basic', header=None, skiprows=1).values
 rows, columns = table.shape
 
 #alle Gebaeude aus der Tabelle generieren und im Projekt speichern, nur Einfamilienhaeuser; Projekt wird zurückgegeben
@@ -14,10 +14,6 @@ def generate_buildings():
     pro = Project(load_data=True)
     pro.name = "Einfamilienhaeuser"
 
-    thisdict={
-        0 : 20,
-        90 : 40
-    }
 
     for i in range(rows):
         pro.add_residential(
@@ -33,7 +29,6 @@ def generate_buildings():
         )
         pro.buildings[i].street_name=table[i,13]
         pro.buildings[i].city=table[i,14]
-        #pro.buildings[i].window_area=thisdict
     return pro
 
 
