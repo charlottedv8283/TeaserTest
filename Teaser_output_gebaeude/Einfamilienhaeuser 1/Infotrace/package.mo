@@ -1,5 +1,5 @@
 within Einfamilienhaeuser;
-package Mueller
+package Infotrace
   extends Modelica.Icons.Package;
-
-end Mueller;
+  
+end Infotrace;

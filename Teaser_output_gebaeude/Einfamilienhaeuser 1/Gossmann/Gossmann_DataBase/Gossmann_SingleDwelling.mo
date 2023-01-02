@@ -1,3 +1,4 @@
+ 
 within Einfamilienhaeuser.Gossmann.Gossmann_DataBase;
 record Gossmann_SingleDwelling "Gossmann_SingleDwelling"
   extends AixLib.DataBase.ThermalZones.ZoneBaseRecord(
@@ -19,7 +20,7 @@ record Gossmann_SingleDwelling "Gossmann_SingleDwelling"
     hConExt = 2.0452883263009847,
     nExt = 1,
     RExt = {0.00022661880058698081},
-    RExtRem = 0.01016937251769624,
+    RExtRem = 0.01016937251769624 ,
     CExt = {41302550.69804754},
     AInt = 67.08333333333333,
     hConInt = 2.7,

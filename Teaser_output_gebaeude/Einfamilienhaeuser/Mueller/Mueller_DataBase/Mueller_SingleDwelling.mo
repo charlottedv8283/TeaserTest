@@ -1,4 +1,3 @@
- 
 within Einfamilienhaeuser.Mueller.Mueller_DataBase;
 record Mueller_SingleDwelling "Mueller_SingleDwelling"
   extends AixLib.DataBase.ThermalZones.ZoneBaseRecord(
@@ -19,14 +18,14 @@ record Mueller_SingleDwelling "Mueller_SingleDwelling"
     AExt = {38.550000000000004, 53.2, 38.550000000000004, 38.550000000000004, 53.2, 38.550000000000004},
     hConExt = 2.2917114351496553,
     nExt = 1,
-    RExt = {0.00036756452682894784},
-    RExtRem = 0.0013234418723404315 ,
-    CExt = {68205247.66329499},
+    RExt = {0.00036756452682894805},
+    RExtRem = 0.0013234418723404313,
+    CExt = {68205247.66329497},
     AInt = 560.0,
     hConInt = 2.414285714285714,
     nInt = 1,
     RInt = {0.00012297239254162526},
-    CInt = {84773445.51263279},
+    CInt = {84773445.51263277},
     AFloor = 0.0,
     hConFloor = 0.0,
     nFloor = 1,

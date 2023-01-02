@@ -1,4 +1,3 @@
- 
 within Einfamilienhaeuser.Infotrace.Infotrace_DataBase;
 record Infotrace_SingleDwelling "Infotrace_SingleDwelling"
   extends AixLib.DataBase.ThermalZones.ZoneBaseRecord(
@@ -19,14 +18,14 @@ record Infotrace_SingleDwelling "Infotrace_SingleDwelling"
     AExt = {22.03875, 50.727272727272734, 22.03875, 22.03875, 89.95636363636365, 22.03875},
     hConExt = 2.0852277805917234,
     nExt = 1,
-    RExt = {0.00043307162075496223},
-    RExtRem = 0.0014883469712678992 ,
-    CExt = {52149486.446046166},
+    RExt = {0.0004330716207549626},
+    RExtRem = 0.001488346971267899,
+    CExt = {52149486.44604617},
     AInt = 155.0,
     hConInt = 2.7,
     nInt = 1,
-    RInt = {0.0004690662338119381},
-    CInt = {27913021.838265095},
+    RInt = {0.00046906623381193804},
+    CInt = {27913021.838265087},
     AFloor = 0.0,
     hConFloor = 0.0,
     nFloor = 1,

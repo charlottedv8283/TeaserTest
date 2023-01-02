@@ -1,22 +1,24 @@
-within Einfamilienhaeuser.Gossmann;
-model Gossmann
-  "This is the simulation model of Gossmann with traceable ID 3"
+
+within Einfamilienhaeuser.Infotrace;
+model Infotrace
+  "This is the simulation model of Infotrace with traceable ID 2"
 
 
 AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
-    buildingID=3,
+    buildingID=2,
     energyDynamics=Modelica.Fluid.Types.Dynamics.FixedInitial,
     T_start = 293.15,
-    VAir = 80.5,
-    ABuilding=35.0,
-    ASurTot=216.28333333333336,
+    VAir = 186.0,
+    ABuilding=93.0,
+    ASurTot=402.4386363636364,
     numZones = 1,
     internalGainsMode = 1,
         use_C_flow = false,
         use_moisture_balance = false,
         redeclare package Medium = Modelica.Media.Air.SimpleAir,
     zoneParam = {
-      Gossmann_DataBase.Gossmann_SingleDwelling()},
+      Infotrace_DataBase.Infotrace_SingleDwelling()
+      },
   heatAHU = false,
   coolAHU = false,
   dehuAHU = false,
@@ -31,8 +33,8 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
   dpAHU_sup=800,
   dpAHU_eta=800,
   zone(ROM(extWallRC(thermCapExt(each der_T(fixed=true))),
-           intWallRC(thermCapInt(each der_T(fixed=true))),floorRC(
-            thermCapExt(each der_T(fixed=true))),roofRC(thermCapExt(each
+           intWallRC(thermCapInt(each der_T(fixed=true))),floorRC
+           (thermCapExt(each der_T(fixed=true))),roofRC(thermCapExt(each
            der_T(fixed=true))))),
    redeclare model corG =
         AixLib.ThermalZones.ReducedOrder.SolarGain.CorrectionGDoublePane,
@@ -53,7 +55,7 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
     extrapolation=Modelica.Blocks.Types.Extrapolation.Periodic,
     tableName="Internals",
     fileName=Modelica.Utilities.Files.loadResource(
-        "modelica://Einfamilienhaeuser/Gossmann/InternalGains_Gossmann.txt"),
+        "modelica://Einfamilienhaeuser/Infotrace/InternalGains_Infotrace.txt"),
     columns=2:4)
     "Profiles for internal gains"
     annotation (Placement(transformation(extent={{72,-42},{56,-26}})));
@@ -64,7 +66,7 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
     tableName="AHU",
     columns=2:5,
     fileName=Modelica.Utilities.Files.loadResource(
-        "modelica://Einfamilienhaeuser/Gossmann/AHU_Gossmann.txt"))
+        "modelica://Einfamilienhaeuser/Infotrace/AHU_Infotrace.txt"))
     "Boundary conditions for air handling unit"
     annotation (Placement(transformation(extent={{-64,-6},{-48,10}})));
 
@@ -73,7 +75,7 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
     tableName="Tset",
     extrapolation=Modelica.Blocks.Types.Extrapolation.Periodic,
     fileName=Modelica.Utilities.Files.loadResource(
-        "modelica://Einfamilienhaeuser/Gossmann/TsetHeat_Gossmann.txt"),
+        "modelica://Einfamilienhaeuser/Infotrace/TsetHeat_Infotrace.txt"),
     columns=2:2)
     "Set points for heater"
     annotation (Placement(transformation(extent={{72,-66},{56,-50}})));
@@ -83,7 +85,7 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
       tableName="Tset",
       extrapolation=Modelica.Blocks.Types.Extrapolation.Periodic,
       fileName=Modelica.Utilities.Files.loadResource(
-          "modelica://Einfamilienhaeuser/Gossmann/TsetCool_Gossmann.txt"),
+          "modelica://Einfamilienhaeuser/Infotrace/TsetCool_Infotrace.txt"),
       columns=2:2)
       "Set points for cooler"
     annotation (Placement(transformation(extent={{72,-90},{56,-74}})));
@@ -115,7 +117,7 @@ equation
       __Dymola_experimentSetupOutput(equidistant=true,
       events=false),
       __Dymola_Commands(file=
-        "Resources/Scripts/Dymola/Gossmann/Gossmann.mos"
+        "Resources/Scripts/Dymola/Infotrace/Infotrace.mos"
       "Simulate and Plot"),
     Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,100}}),
         graphics={
@@ -135,4 +137,4 @@ equation
           fillColor={0,0,255},
           fillPattern=FillPattern.Solid,
           textString="TB")}));
-end Gossmann;
+end Infotrace;

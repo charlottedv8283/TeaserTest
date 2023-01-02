@@ -1,4 +1,3 @@
- 
 within Einfamilienhaeuser.Griessgram.Griessgram_DataBase;
 record Griessgram_SingleDwelling "Griessgram_SingleDwelling"
   extends AixLib.DataBase.ThermalZones.ZoneBaseRecord(
@@ -19,13 +18,13 @@ record Griessgram_SingleDwelling "Griessgram_SingleDwelling"
     AExt = {632.7500000000001, 950.0000000000001, 632.7500000000001, 632.7500000000001, 950.0000000000001, 632.7500000000001},
     hConExt = 2.271202888738434,
     nExt = 1,
-    RExt = {6.942418513207862e-06},
-    RExtRem = 0.00039979197142572554 ,
+    RExt = {6.9424185132078606e-06},
+    RExtRem = 0.00039979197142572554,
     CExt = {1486315259.377473},
     AInt = 28404.761904761905,
     hConInt = 2.398239731768651,
     nInt = 1,
-    RInt = {2.447593861758219e-06},
+    RInt = {2.4475938617582196e-06},
     CInt = {3144387255.2499075},
     AFloor = 0.0,
     hConFloor = 0.0,

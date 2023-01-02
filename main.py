@@ -34,8 +34,8 @@ def generate_buildings():
 
 pro = generate_buildings()
 
-for j in range(rows):
-    print(pro.buildings[j].name, pro.buildings[j].sum_heat_load,'W',pro.buildings[j].height_of_floors,pro.buildings[j].street_name,pro.buildings[j].year_of_retrofit)
+#for j in range(rows):
+    #print(pro.buildings[j].name, pro.buildings[j].sum_heat_load,'W',pro.buildings[j].height_of_floors,pro.buildings[j].street_name,pro.buildings[j].year_of_retrofit)
 
 #Exportieren aller zuvor generierten Gebaeude
 def export_buildings(pro):
@@ -76,9 +76,8 @@ def export_buildings(pro):
 
     pro.export_aixlib(
         internal_id=None,
-        path=r'C:\Users\charl\PycharmProjects\TeaserTest\Teaser_output_gebaeude')
+        path=r'J:\My Documents\TeaserTest\Teaser_output_gebaeude')
 
 #Aufrufen der Funktion export_buildings, um Gebaeude abzuspeichern
-#export_buildings(pro)
+export_buildings(pro)
 
-print(type(pro.buildings[1]))

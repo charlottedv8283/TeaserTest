@@ -1,4 +1,3 @@
-
 within Einfamilienhaeuser.Infotrace;
 model Infotrace
   "This is the simulation model of Infotrace with traceable ID 2"
@@ -17,8 +16,7 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
         use_moisture_balance = false,
         redeclare package Medium = Modelica.Media.Air.SimpleAir,
     zoneParam = {
-      Infotrace_DataBase.Infotrace_SingleDwelling()
-      },
+      Infotrace_DataBase.Infotrace_SingleDwelling()},
   heatAHU = false,
   coolAHU = false,
   dehuAHU = false,
@@ -33,8 +31,8 @@ AixLib.ThermalZones.ReducedOrder.Multizone.MultizoneEquipped multizone(
   dpAHU_sup=800,
   dpAHU_eta=800,
   zone(ROM(extWallRC(thermCapExt(each der_T(fixed=true))),
-           intWallRC(thermCapInt(each der_T(fixed=true))),floorRC
-           (thermCapExt(each der_T(fixed=true))),roofRC(thermCapExt(each
+           intWallRC(thermCapInt(each der_T(fixed=true))),floorRC(
+            thermCapExt(each der_T(fixed=true))),roofRC(thermCapExt(each
            der_T(fixed=true))))),
    redeclare model corG =
         AixLib.ThermalZones.ReducedOrder.SolarGain.CorrectionGDoublePane,

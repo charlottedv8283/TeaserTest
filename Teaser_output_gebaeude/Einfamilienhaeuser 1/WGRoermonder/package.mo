@@ -1,5 +1,5 @@
 within Einfamilienhaeuser;
-package Mueller
+package WGRoermonder
   extends Modelica.Icons.Package;
-
-end Mueller;
+  
+end WGRoermonder;

@@ -1,5 +1,5 @@
 within Einfamilienhaeuser;
-package Mueller
+package Gossmann
   extends Modelica.Icons.Package;
-
-end Mueller;
+  
+end Gossmann;

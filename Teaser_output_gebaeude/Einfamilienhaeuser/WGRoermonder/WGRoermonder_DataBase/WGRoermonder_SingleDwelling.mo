@@ -1,4 +1,3 @@
- 
 within Einfamilienhaeuser.WGRoermonder.WGRoermonder_DataBase;
 record WGRoermonder_SingleDwelling "WGRoermonder_SingleDwelling"
   extends AixLib.DataBase.ThermalZones.ZoneBaseRecord(
@@ -19,14 +18,14 @@ record WGRoermonder_SingleDwelling "WGRoermonder_SingleDwelling"
     AExt = {16.3, 93.10000000000001, 16.3, 16.3, 93.10000000000001, 16.3},
     hConExt = 1.9593476531424028,
     nExt = 1,
-    RExt = {0.00012495391523597435},
-    RExtRem = 0.00300741596295682 ,
-    CExt = {70124694.80275123},
+    RExt = {0.00012495391523597405},
+    RExtRem = 0.0030074159629568204,
+    CExt = {70124694.80275132},
     AInt = 122.50000000000001,
     hConInt = 2.7,
     nInt = 1,
-    RInt = {0.00016848383309682702},
-    CInt = {18190813.208263773},
+    RInt = {0.00016848383309683447},
+    CInt = {18190813.20826432},
     AFloor = 0.0,
     hConFloor = 0.0,
     nFloor = 1,

@@ -1,5 +1,5 @@
 within Einfamilienhaeuser;
-package Mueller
+package Griessgram
   extends Modelica.Icons.Package;
-
-end Mueller;
+  
+end Griessgram;
