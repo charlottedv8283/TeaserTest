@@ -1,4 +1,0 @@
-19.12.2022-14:08:25 INFO DymolaAPI: -------------------------Initializing class DymolaAPI-------------------------
-19.12.2022-14:08:25 INFO DymolaAPI: Using dymola installation at C:\Program Files\Dymola 2021
-19.12.2022-14:08:25 INFO DymolaAPI: Using dymola.exe: C:\Program Files\Dymola 2021\bin64\Dymola.exe
-19.12.2022-14:08:25 INFO DymolaAPI: Using dymola interface: C:\Program Files\Dymola 2021\Modelica\Library\python_interface\dymola.egg

@@ -1,0 +1,5 @@
+openModel("D:\\kbr-msc\\Simulation\\modelica-ibpsa\\IBPSA\\package.mo");
+openModel("D:\\kbr-msc\\Simulation\\AixLib\\AixLib\\package.mo");
+openModel("D:\\kbr-msc\\Simulation\\BESMod\\BESMod\\package.mo");
+openModel("D:\\kbr-msc\\Simulation\\MA_Schier\\MA_Schier\\package.mo");
+cd("D:\\kbr-msc\\Dymola_WD");

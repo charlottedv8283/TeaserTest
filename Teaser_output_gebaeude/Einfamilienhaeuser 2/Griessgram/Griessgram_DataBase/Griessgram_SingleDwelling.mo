@@ -87,7 +87,5 @@ record Griessgram_SingleDwelling "Griessgram_SingleDwelling"
     CoolerOn = false,
     withIdealThresholds = false,
     TThresholdHeater = 288.15,
-    TThresholdCooler = 295.15,
-    heaLoadFacGrd=0,
-    heaLoadFacOut=0);
+    TThresholdCooler = 295.15);
 end Griessgram_SingleDwelling;
